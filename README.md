@@ -8,7 +8,9 @@ avro library (https://avro.apache.org/) demo app
    as a solution slightly changed flow commands were used:
 
    conan source --source-folder tmp/source .
+   
    conan install --install-folder tmp/install --output-folder tmp .
+   
    conan build --source-folder tmp/source --install-folder tmp/install --build-folder tmp .
    
    
