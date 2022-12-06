@@ -32,5 +32,8 @@
 *.app
 
 # misc files
-.clangd/
 *.swp
+*.swo
+.clangd/
+build/
+compile_commands.json
