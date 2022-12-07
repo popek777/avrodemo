@@ -43,15 +43,18 @@ based on official examples
 - How to move forward with c++ development
 
   wget https://dlcdn.apache.org/avro/avro-1.11.1/avro-doc-1.11.1.tar.gz
+  
   tar -xvf avro-cpp-1.11.1.tar.gz 
+  
   cd cd avro-cpp-1.11.1
+  
   ./build.sh test
   
-  then you can have a look on schema files (in jsonschemas directory) and generate header files based on schema files e.g.:
+  #then you can have a look on schema files (in jsonschemas directory) and generate header files based on schema files e.g.:
 
   ./build/avrogencpp -n demo -i jsonschemas/primitivetypes -o primitivetypes.hh
   
-  additionally have a look into examples and test directories to see the usage
+  #additionally have a look into examples and test directories to see the usage
  
   
   
