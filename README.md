@@ -5,7 +5,7 @@ based on official examples
 # build & run demo app
 ./build.sh
 
-# Q&A
+# FAQ
 
 - Is data strongly typed? If so how to work with different data types
   
