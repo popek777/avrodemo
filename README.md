@@ -29,4 +29,17 @@ based on official examples
    'root' data type keeps union (https://avro.apache.org/docs/1.11.1/specification/#unions) field and union may be 
    data_type_v1 or data_type_v2 or ... data_type_vN,
    though a disadvantage is that all versions must be copy pasted in single schema file)
+   
+- Is there an IDL language in avro
+  
+  yes: https://avro.apache.org/docs/1.11.1/idl-language/.
+  There is a java tool which generates scheman files (json files) from IDL file. Then such schema files can be used to generated c++ source files.
+  This tool does not come with avro c++ package.
+  
+- Does c++ package support RPC (services)
+
+  no. At the moment c++ package offers only encoding and decoding (more details: https://avro.apache.org/docs/1.11.1/api/cpp/html/#Introduction)
+  
+  
+ 
   
