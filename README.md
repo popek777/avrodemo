@@ -26,7 +26,7 @@ based on official examples
   
   Any versionning must be implemented by application layer protocol 
   (e.g. the easiest way to implement versioning on top of avro:
-   'root' data type keeps union field and union may be 
+   'root' data type keeps union (https://avro.apache.org/docs/1.11.1/specification/#unions) field and union may be 
    data_type_v1 or data_type_v2 or ... data_type_vN,
    though a disadvantage is that all versions must be copy pasted in single schema file)
   
