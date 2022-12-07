@@ -8,7 +8,7 @@ mkdir build
 pushd build
 
 conan install .. --build=missing
-cmake .. -DCMAKE_BUILD_TYPE=Release -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 cmake --build .
 
 bin/avrodemo
