@@ -1,0 +1,8 @@
+
+function! s:FMakeCurrentProject()
+  cgetexpr system('make -C build -j 12')
+  copen
+endfunction
+
+command! -nargs=0 MakeCurrentProject :call s:FMakeCurrentProject()
+nmap <F7> :MakeCurrentProject<CR>
