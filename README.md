@@ -24,5 +24,9 @@ based on official examples
   then resolving decoded (https://avro.apache.org/docs/1.11.1/api/cpp/html/index.html#ReadingDifferentSchema)
   could be used to encode/decode between types.
   
-  Any versionning must be implemented by application layer protocol.
+  Any versionning must be implemented by application layer protocol 
+  (e.g. the easiest way to implement versioning on top of avro:
+   'root' data type keeps union field and union may be 
+   data_type_v1 or data_type_v2 or ... data_type_vN,
+   though a disadvantage is that all versions must be copy pasted in single schema file)
   
